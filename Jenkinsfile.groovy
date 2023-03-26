@@ -18,7 +18,7 @@ pipeline {
                     git commit -m "Automated build"
                     git push https://github.com/akmot9/installer.git HEAD:main
                 '''
-                }
+                
             }
         }
     }
