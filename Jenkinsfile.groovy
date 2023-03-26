@@ -10,13 +10,13 @@ pipeline {
         
         stage('Publish to GitHub') {
             steps {
-                withCredentials([usernamePassword(credentialsId: 'd6ec43f6-17ef-4301-a800-f3367e26cbc4', usernameVariable: 'GITHUB_USERNAME', passwordVariable: 'GITHUB_PASSWORD')]) {
+                withCredentials([string(credentialsId: 'a6de0d16-7485-4296-9f1d-09394672d515', variable: 'MY_TOKEN')]) {
                     sh '''
                         git config --global user.email "avicocyprien@yahoo.fr"
                         git config --global user.name "Akmot9"
                         git add .
                         git commit -m "Automated build"
-                        git push https://${GITHUB_USERNAME}:${GITHUB_PASSWORD}@github.com/Akmot9/installer.git HEAD:main
+                        git push https://USERNAME:TOKEN@github.com/akmot9/installer.git HEAD:main
                     '''
                 }
             }
