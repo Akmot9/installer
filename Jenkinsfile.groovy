@@ -10,7 +10,7 @@ pipeline {
         
         stage('Publish to GitHub') {
             steps {
-                withCredentials([string(credentialsId: 'd774d336-975d-4a79-85fa-9039891a9996', variable: 'MY_TOKEN')]) {
+                withCredentials([string(credentialsId: '051e60a0-4a9b-4f9d-bfff-fc15b059b2e3', variable: 'MY_TOKEN')]) {
                     sh '''
                         git config --global user.email "avicocyprien@yahoo.fr"
                         git config --global user.name "Akmot9"
