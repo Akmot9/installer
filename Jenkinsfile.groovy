@@ -16,7 +16,7 @@ pipeline {
                     pip install pyinstaller
 
                     # Compile your Python script using PyInstaller
-                    pyinstaller --onefile your_script.py
+                    pyinstaller --onefile installer.py
                 '''
             }
         }
@@ -25,7 +25,7 @@ pipeline {
             steps {
                 sh '''
                     # Run the compiled executable
-                    dist/your_script
+                    dist/installer
                 '''
             }
         }
