@@ -16,7 +16,7 @@ pipeline {
                         git config --global user.name "Akmot9"
                         git add .
                         git commit -m "Automated build"
-                        git push https://${GITHUB_USERNAME}:${GITHUB_PASSWORD}@github.com/akmot9/installer.git HEAD:main
+                        git push https://${GITHUB_USERNAME}:${GITHUB_PASSWORD}@github.com/Akmot9/installer.git HEAD:main
                     '''
                 }
             }
