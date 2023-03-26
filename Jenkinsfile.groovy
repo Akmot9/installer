@@ -16,10 +16,11 @@ pipeline {
                         git config --global user.name "Akmot9"
                         git add .
                         git commit -m "Automated build"
-                        git push https://USERNAME:TOKEN@github.com/akmot9/installer.git HEAD:main
+                        git push https://USERNAME:${MY_TOKEN}@github.com/akmot9/installer.git HEAD:main
                     '''
                 }
             }
         }
     }
 }
+
