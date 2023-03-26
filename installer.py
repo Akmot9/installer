@@ -1,6 +1,6 @@
 import subprocess
 
-print("Installation")
+print("Installation ...")
 
 # Check for Firefox
 try:
