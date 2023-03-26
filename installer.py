@@ -1,5 +1,7 @@
 import subprocess
 
+print("Installation")
+
 # Check for Firefox
 try:
     output = subprocess.check_output(['firefox', '--version'], stderr=subprocess.STDOUT)
