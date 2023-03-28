@@ -1,6 +1,6 @@
 import tkinter as tk
-from src.CheckSoft import CheckInstalledPrograms
-from src.CheckService import CheckService
+from CheckSoft import CheckInstalledPrograms
+from CheckService import CheckService
 
 
 class GUI:
